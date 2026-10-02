@@ -1256,24 +1256,3 @@
 
   $("select:not(.ignore)").niceSelect();
 })(jQuery);
-<script>
-document.querySelectorAll(".mm-faq-question").forEach(function (button) {
-
-  button.addEventListener("click", function () {
-
-    const currentItem = this.closest(".mm-faq-item");
-
-    document.querySelectorAll(".mm-faq-item").forEach(function (item) {
-
-      if (item !== currentItem) {
-        item.classList.remove("active");
-      }
-
-    });
-
-    currentItem.classList.toggle("active");
-
-  });
-
-});
-</script>
